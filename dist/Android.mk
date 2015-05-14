@@ -28,6 +28,7 @@ common_sqlite_flags := \
 	-DSQLITE_OMIT_COMPILEOPTION_DIAGS \
 	-DSQLITE_OMIT_LOAD_EXTENSION \
 	-DSQLITE_DEFAULT_FILE_PERMISSIONS=0600 \
+	-DSQLITE_SECURE_DELETE \
 	-Dfdatasync=fdatasync
 
 device_sqlite_flags := $(common_sqlite_flags) \
