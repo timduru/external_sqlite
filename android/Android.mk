@@ -41,7 +41,7 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE:= libsqlite3_phone_number_utils_test
 
-LOCAL_CFLAGS += -Wall -Werror
+LOCAL_CFLAGS += -Wall -Werror -Wno-unused-parameter -Wno-missing-field-initializers -Wno-extra
 
 LOCAL_SRC_FILES := \
 	PhoneNumberUtils.cpp \
